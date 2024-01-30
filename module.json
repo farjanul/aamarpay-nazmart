@@ -1,0 +1,38 @@
+{
+  "name": "AamarPayPaymentGateway",
+  "alias": "aamarpaypaymentgateway",
+  "description": "",
+  "keywords": [],
+  "priority": 0,
+  "providers": [
+    "Modules\\AamarPayPaymentGateway\\Providers\\AamarPayPaymentGatewayServiceProvider"
+  ],
+  "aliases": {},
+  "files": [],
+  "requires": [],
+  "nazmartMetaData": {
+    "paymentGateway": {
+      "name": "AamarPay",
+      "slug": "aamarpay",
+      "tenant": true,
+      "chargeCustomerMethodNameSpace": "Modules\\AamarPayPaymentGateway\\Http\\Controllers\\AamarPayPaymentGatewayController",
+      "chargeCustomerMethodName": "chargeCustomer",
+      "test_mode": false,
+      "status": true,
+      "extraInfoMarkupBlade": "inline-kinetickpey",
+      "logo_file": "payment-logo.jpeg",
+      "admin_settings": {
+        "show_admin_landlord": true,
+        "show_admin_tenant": true,
+        "menu_item": [
+          {
+            "id": "aamarpay-settings-menu",
+            "label": "Aamar Pay",
+            "route": "aamarpaypaymentgateway.landlord.admin.settings",
+            "tenantRoute": "aamarpaypaymentgateway.tenant.admin.settings"
+          }
+        ]
+      }
+    }
+  }
+}
