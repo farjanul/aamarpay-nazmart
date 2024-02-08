@@ -1,3 +1,5 @@
+![modules_statuses](https://www.aamarpay.com/images/logo/aamarpay_logo.png)
+
 # Plugin Development
 Here is a Plugin with a Custom payment gateway implemented, you can explore it to understand how it works.
 
